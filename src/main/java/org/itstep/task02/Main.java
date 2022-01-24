@@ -35,9 +35,9 @@ public class Main {
         // FIXME: Раскомментируйте код
         Employee[] employees = { // Обратите внимание, что мы создаем массив типа Employee, и помещаем данные
                 // типа EmployeeAndTax! Подумайте, почему такое возможно?
-                new EmployeeAndTax("Иванов", PaymentTypes.RATE, 3000, 15),
-                new EmployeeAndTax("Сидоров", PaymentTypes.HOURLY, 800, 20),
-                new EmployeeAndTax("Петров", PaymentTypes.JOB_PRICE, 5500, 15)
+                new EmployeeAndTax("Иванов", PaymentTypes.RATE, 3000),
+                new EmployeeAndTax("Сидоров", PaymentTypes.HOURLY, 800),
+                new EmployeeAndTax("Петров", PaymentTypes.JOB_PRICE, 5500)
         };
         System.out.println("  ФИО    |  Налог, % | Сумма (грн) | К оплате (грн)\n" +
                 "---------|-----------|-------------|---------------");

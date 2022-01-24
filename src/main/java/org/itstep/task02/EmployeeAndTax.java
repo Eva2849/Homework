@@ -13,8 +13,21 @@ public class EmployeeAndTax extends Employee {
         this.tax = tax;
     }
 
+    public EmployeeAndTax(String fullName, String paymentType, int payment) {
+        super(fullName, paymentType, payment);
+        if (paymentType.equals(PaymentTypes.HOURLY)) {
+            tax = 20;
+        } else {
+            tax = 15;
+        }
+    }
+
     public int getTax() {
         return tax;
+    }
+
+    public void setTax(int tax) {
+        this.tax = tax;
     }
 
     @Override
