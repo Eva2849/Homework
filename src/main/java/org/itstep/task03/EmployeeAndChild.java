@@ -5,14 +5,14 @@ import org.itstep.task02.EmployeeAndTax;
 public class EmployeeAndChild extends EmployeeAndTax {
     private boolean hasChild;
 
-    public EmployeeAndChild(String fullName, String paymentType, int payment) {
+    public EmployeeAndChild(String fullName, String paymentType, double payment) {
         super(fullName, paymentType, payment);
         if (!hasChild) {
-            setTax(20);
+            setTax(getTax() + 5);
         }
     }
 
-    public EmployeeAndChild(String fullName, String paymentType, int payment, boolean hasChild) {
+    public EmployeeAndChild(String fullName, String paymentType, double payment, boolean hasChild) {
         super(fullName, paymentType, payment);
         this.hasChild = hasChild;
     }
